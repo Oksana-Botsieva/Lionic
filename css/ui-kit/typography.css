@@ -1,0 +1,80 @@
+body {
+  font-family: Open Sans,sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 155%; /* 24.8px */
+  color: #787878;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading1,
+.heading2,
+.heading3,
+.heading4,
+.heading5,
+.heading6 {
+  font-family: Open Sans,sans-serif;
+  line-height: 130%; /* 46.8px */
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 300;
+}
+h2{
+  font-size: 36px;
+  font-weight: 300;
+
+}
+h3{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.hero__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+}
+.services__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+}
+.card__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+}
+.card__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.card__date {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 150%; /* 15px */
+}
+.card__text-Clients {
+  line-height: 180%;
+}
+.author {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 180%;
+}
+.customer {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%; /* 25.2px */
+}
+.card__text-contacts {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%; /* 25.2px */
+}

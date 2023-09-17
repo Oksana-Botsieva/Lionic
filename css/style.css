@@ -1,6 +1,6 @@
 @import "./fonts.css";
+
 @import "./nullstyle.css";
 
-body {
-  font-family: OpenSans;
-}
+@import "../css/ui-kit/typography.css";
+@import "../css/ui-kit/.button-text.css";
