@@ -3,4 +3,6 @@
 @import "./nullstyle.css";
 
 @import "../css/ui-kit/typography.css";
-@import "../css/ui-kit/.button-text.css";
+@import "../css/ui-kit/button-text.css";
+
+@import "./variables.css";
