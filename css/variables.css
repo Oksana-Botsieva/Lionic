@@ -1,24 +1,20 @@
 :root {
   /*colors*/
   --background-color: #FFFFFF;
-  --card-border-color: #E4E4E4;
+  --border-color: #E4E4E4;
   --services-icon-color: #3172B9;
-
-  /*accent colors*/
+  --hover-services-icon-color: #FFFFFF;
+  --hover-color: #71A7E2;
+  --focus-color: #3172B9;
+  --focus-border-color: var(--hover-color);
+  --active-color: #0E3B6C;
+  --disabled-color: #C4C4C4;
 
   /*text colors*/
   --dark-text-color: #1C1C1C;
   --light-text-color: #FFFFFF;
   --medium-text-color: #787878;
 
-  /*button color*/
-  --button-background-color: var(--services-icon-color);
-  --focus-button-background-color: var(--services-icon-color);
-  --outline-button-color: var(--services-icon-color);
-  --hover-button-background-color: #71A7E2;
-  --active-button-background-color: #0E3B6C;
-  --disabled-button-background-color: #C4C4C4;
-
   /*services colors*/
-  
+
 }
