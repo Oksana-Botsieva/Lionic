@@ -1,25 +1,29 @@
 @font-face {
-  font-family: OpenSans;
-  src: local(OpenSans-Regular),
-  url("../assets/fonts/OpenSans-Regular.woff2"),
-  url("../assets/fonts/OpenSans-Regular.woff");
-  font-style: normal;
-  font-weight: 400;
+    font-family: OpenSans;
+    src: local(OpenSans-Regular),
+    url("../assets/fonts/OpenSans-Regular.woff2"),
+    url("../assets/fonts/OpenSans-Regular.woff");
+    font-style: normal;
+    font-weight: 400;
+    font-display: fallback;
 }
 
 @font-face {
-  font-family: OpenSans;
-  src: local(OpenSans-Light),
-  url("../assets/fonts/OpenSans-Light.woff2"),
-  url("../assets/fonts/OpenSans-Light.woff");
-  font-style: normal;
-  font-weight: 300;
+    font-family: OpenSans;
+    src: local(OpenSans-Light),
+    url("../assets/fonts/OpenSans-Light.woff2"),
+    url("../assets/fonts/OpenSans-Light.woff");
+    font-style: normal;
+    font-weight: 300;
+    font-display: fallback;
 }
+
 @font-face {
-  font-family: OpenSans;
-  src: local(OpenSans-SemiBold),
-  url("../assets/fonts/OpenSans-SemiBold.woff2"),
-  url("../assets/fonts/OpenSans-SemiBold.woff");
-  font-style: normal;
-  font-weight: 600;
+    font-family: OpenSans;
+    src: local(OpenSans-SemiBold),
+    url("../assets/fonts/OpenSans-SemiBold.woff2"),
+    url("../assets/fonts/OpenSans-SemiBold.woff");
+    font-style: normal;
+    font-weight: 600;
+    font-display: fallback;
 }

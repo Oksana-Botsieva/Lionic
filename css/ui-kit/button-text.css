@@ -1,14 +1,15 @@
 .button__text {
-  font-family: Open Sans,sans-serif;
+  font-family: Open Sans, sans-serif;
   font-size: 15px;
-  font-style: normal;
   font-weight: 600;
-}
-.button__subtitle {
-  font-family: Open Sans,sans-serif;
-  font-size: 11px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 155%; /* 17.05px */
-  text-transform: uppercase;
 }
+
+/*.button__subtitle {*/
+/*  font-family: Open Sans,sans-serif;*/
+/*  font-size: 11px;*/
+/*  font-style: normal;*/
+/*  font-weight: 400;*/
+/*  line-height: 155%; !* 17.05px *!*/
+/*  text-transform: uppercase;*/
+/*}*/

@@ -2,7 +2,18 @@
 
 @import "./nullstyle.css";
 
+@import "./variables.css";
+
 @import "../css/ui-kit/typography.css";
 @import "../css/ui-kit/button-text.css";
 
-@import "./variables.css";
+@import "/css/components/button.css";
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
