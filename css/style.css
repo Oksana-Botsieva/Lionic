@@ -8,10 +8,11 @@
 @import "../css/ui-kit/button-text.css";
 
 @import "/css/components/button.css";
+@import "/css/components/header.css";
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1540px;
     height: 100%;
     padding-right: 15px;
     padding-left: 15px;

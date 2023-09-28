@@ -1,0 +1,30 @@
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  background-color: transparent;
+}
+
+/*.button {*/
+/*  color: var(--background-color);*/
+/*}*/
+
+.header__container {
+  display: flex;
+  padding-top: 44px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__burger {
+  display: none;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  margin-top: 29px;
+  background: var(--disabled-color);
+}
