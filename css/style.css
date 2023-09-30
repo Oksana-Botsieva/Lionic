@@ -4,11 +4,11 @@
 
 @import "./variables.css";
 
-@import "../css/ui-kit/typography.css";
-@import "../css/ui-kit/button-text.css";
+@import "./typography.css";
 
-@import "/css/components/button.css";
-@import "/css/components/header.css";
+@import "../css/ui-kit/button.css";
+
+@import "./components/header.css";
 
 .container {
     width: 100%;
