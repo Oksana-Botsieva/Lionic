@@ -10,7 +10,8 @@
 }
 
 .button:focus {
-    border: 1px solid var(--hover-color);
+    outline: 1px solid var(--hover-color);
+    outline-offset: 3px;
 }
 
 @media (hover: hover) {
@@ -27,7 +28,7 @@
     background-color: var(--disabled-color);
 }
 
-.button_text {
+.button {
     font-family: Open Sans, sans-serif;
     font-weight: 600;
     color: var(--light-text-color);
