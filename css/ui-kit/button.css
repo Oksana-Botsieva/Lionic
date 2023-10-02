@@ -1,0 +1,35 @@
+.button {
+    display: flex;
+    width: 250px;
+    height: 58px;
+    padding: 15px 35px;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--services-icon-color);
+}
+
+.button:focus {
+    outline: 1px solid var(--hover-color);
+    outline-offset: 3px;
+}
+
+@media (hover: hover) {
+    .button:hover:not(:focus) {
+        background-color: var(--hover-color);
+    }
+}
+
+.button:active {
+    background-color: var(--active-color);
+}
+
+.button:disabled {
+    background-color: var(--disabled-color);
+}
+
+.button {
+    font-family: Open Sans, sans-serif;
+    font-weight: 600;
+    color: var(--light-text-color);
+}
