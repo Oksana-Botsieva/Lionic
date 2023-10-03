@@ -27,7 +27,7 @@
   display: none;
 }
 
-.text-link {
+.header__main-menu-item {
   font-size: 17px;
   font-weight: 600;
   line-height: 180%; /* 30.6px */
@@ -39,7 +39,7 @@
     display: flex;
   }
 
-  .text-link {
+  .header__main-menu-item {
     display: none;
   }
 
