@@ -28,9 +28,8 @@
 }
 
 .header__main-menu-item {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 600;
-  line-height: 180%; /* 30.6px */
   color: var(--dark-text-color);
 }
 
