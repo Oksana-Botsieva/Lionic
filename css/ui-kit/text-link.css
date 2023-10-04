@@ -1,0 +1,15 @@
+.text-link:focus {
+  outline: 1px solid var(--hover-color);
+  outline-offset: 3px;
+}
+
+@media (hover: hover) {
+  .text-link:hover:not(:focus) {
+    color: var(--hover-color);
+  }
+}
+
+.text-link:active {
+  border-bottom: 2px solid var(--active-color);
+  color: var(--active-color);
+}
