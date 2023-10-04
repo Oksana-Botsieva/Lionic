@@ -10,6 +10,7 @@
 @import "../css/ui-kit/text-link.css";
 
 @import "./components/header.css";
+@import "./components/hero.css";
 
 .container {
   width: 100%;
