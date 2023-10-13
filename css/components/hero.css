@@ -1,0 +1,97 @@
+
+.hero {
+  width: 100%;
+  height: 550px;
+  padding-top: 113px;
+  background: url("../../assets/images/hero-bg.jpg");
+  background-size: cover;
+}
+
+.hero__text {
+  max-width: 471px;
+}
+
+.hero__ssl {
+  font-family: Open Sans, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 155%; /* 17.05px */
+}
+
+.hero__title {
+  max-width: 529px;
+  font-family: OpenSans, sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 130%; /* 52px */
+  color: var(--dark-text-color);
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 34px;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 26px;
+}
+
+/* .hero__button-wrapper { */
+/*   display: flex; */
+/*   flex-direction: column; */
+/*   row-gap: 14px; */
+/* } */
+/* .hero__ssl { */
+/*   display: flex; */
+/* } */
+.hero__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  width: fit-content;
+  /* width: fit-content - определяем ширину обёртки исходя из ширины его содержимого, */
+  /* таким образом блок не будет на всю ширину страницы растягиваться */
+  align-items: center;
+}
+
+.hero__button {
+  line-height: 100%;
+}
+
+.hero__ssl {
+  padding-left: 27px;
+  position: relative;
+}
+
+.hero__ssl:before {
+  --icon-width: 14px;
+  --icon-height: 17px;
+  /* переменные добавлены просто чтобы был первоисточник размеров иконки */
+  display: block;
+  width: var(--icon-width);
+  height: var(--icon-height);
+  background: url("../../assets/images/secure.svg") center no-repeat;
+  background-size: var(--icon-width) var(--icon-height);
+  /* если не указывать размер фона - тоже будет работать потому что у тебя иконка уже подготовлена */
+  /* но если кто-то туда засунет иконку большего размера, то её обрежет */
+  /* а с указанием размера - изменит пропорции изображения иконки */
+  /* тоже всё поплывёт, но мне нравится когда размер фона указан */
+  content: '';
+  /* ниже - выравнивание иконки относительно текста */
+  /* это один из приёмов вертикального выравнивания, часто приходится его использовать */
+  /* обрати внимание, hero__ssl position: relative, */
+  /* то есть все элементы внутри hero__ssl, которые спозиционированы абсолютно, будут отсчитывать свои координаты от координат hero__ssl */
+  /* можно сказать, что мы задали контекст для координат hero__ssl:before */
+  /* и теперь у них одна система координат на двоих, причём главный в этой системе hero__ssl потому что у него position: relative; */
+  position: absolute;
+  top: 50%;
+  /* top: 50%, буквально - "hero__ssl:before",  твой верх начинается на 50% высоты элемента в системе координат которого ты существуешь */
+  left: 0;
+  transform: translateY(-50%);
+  /*  буквально - "hero__ssl:before", трансформируйся, а именно, переместись на 50% своей высоты выше  */
+}
