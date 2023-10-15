@@ -1,22 +1,28 @@
-.article__link {
-    display: flex;
-    max-width: 570px;
+.article {
+    overflow: hidden;
+    border-radius: 5px;
+    transition: all 0.4s;
+    --offset: 30px;
+    --offsets: 1;
 }
 
-.article {
-    max-width: 570px;
+.article__link {
+    display: flex;
+    width: calc((100% - (var(--offsets)) * (var(--offset)) / (var(--offsets) + 1)));
 }
 
 .article__cover {
-    max-width: 170px;
-    border-radius: 5px 0 0 5px;
+    /*flex-basis: 170px;*/
+    /*flex-grow: 0;*/
+    /*flex-shrink: 1;*/
+    flex: 0 1 170px;
 }
 
 .article__content {
     display: flex;
     width: 100%;
-    /*outline: 1px solid var(--border-color);*/
     padding: 23px 30px;
+    /*outline: 1px solid var(--border-color);*/
     border-width: 1px;
     border-left-width: 0;
     border-style: solid;
@@ -34,52 +40,52 @@
     gap: 0;
 }
 
-.article__content:focus {
-    outline: none;
-    border: transparent;
+.article:focus .article__link,
+.article:focus .article__content {
+    outline: 1px solid var(--hover-color);
+    border-style: none;
     background-color: var(--hover-color);
 }
 
-.article__content:focus .article__subtitle,
-.article__content:focus .article__title,
-.article__content:focus .article__text {
+.article:focus .article__subtitle,
+.article:focus .article__title,
+.article:focus .article__text {
     color: var(--light-text-color)
 }
 
 @media (hover: hover) {
-    .article__content:hover:not(:focus) {
-        border-color: var(--focus-color);
+    .article:hover:not(:focus) .article__content {
+        border-style: none;
         background-color: var(--focus-color);
     }
 }
 
-.article__content:hover:not(:focus) .article__subtitle,
-.article__content:hover:not(:focus) .article__title,
-.article__content:hover:not(:focus) .article__text {
+.article:hover:not(:focus) .article__date,
+.article:hover:not(:focus) .article__title,
+.article:hover:not(:focus) .article__text {
     color: var(--light-text-color);
 }
 
-.article__content:active {
-    border-color: var(--active-color);
+.article:active .article__link,
+.article:active .article__content {
+    outline: 1px solid var(--active-color);
+    border-style: none;
     background-color: var(--active-color);
 }
 
-.article__content:active .article__subtitle,
-.article__content:active .article__title,
-.article__content:active .article__text {
+.article:active .article__subtitle,
+.article:active .article__title,
+.article:active .article__text {
     color: var(--light-text-color);
 }
 
-.article__subtitle {
-    font-family: OpenSans, sans-serif;
+.article__date {
     font-size: 10px;
-    font-weight: 400;
     line-height: 150%; /* 15px */
     color: var(--medium-text-color);
 }
 
 .article__title {
-    font-family: OpenSans, sans-serif;
     font-size: 20px;
     font-weight: 600;
     line-height: 130%; /* 26px */
@@ -87,9 +93,13 @@
 }
 
 .article__text {
+    display: -webkit-box;
+    overflow: hidden;
     max-width: 210px;
     font-size: 14px;
-    font-weight: 400;
+    text-overflow: ellipsis;
     line-height: 150%; /* 21px */
     color: var(--medium-text-color);
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
