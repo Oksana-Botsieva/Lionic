@@ -1,0 +1,104 @@
+.article {
+  overflow: hidden;
+  width: calc((100% - (var(--offsets)) * (var(--offset)) / (var(--offsets) + 1)));
+  border-radius: 5px;
+  /*--offset: 30px;*/
+  /*--offsets: 1;*/
+  transition: all 0.4s;
+}
+
+.article__link {
+  display: flex;
+}
+
+.article__cover {
+  /*flex-basis: 170px;*/
+  /*flex-grow: 0;*/
+  /*flex-shrink: 1;*/
+  flex: 0 1 170px;
+}
+
+.article__content {
+  display: flex;
+  width: 100%;
+  padding: 23px 30px;
+  /*outline: 1px solid var(--border-color);*/
+  border-width: 1px;
+  border-left-width: 0;
+  border-style: solid;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-color: var(--border-color);
+  flex-direction: column;
+  transition: all 0.4s;
+  row-gap: 15px;
+}
+
+.article__name {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.article__date {
+  font-size: 10px;
+  line-height: 150%; /* 15px */
+  color: var(--medium-text-color);
+}
+
+.article__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%; /* 26px */
+  color: var(--dark-text-color);
+}
+
+.article__text {
+  display: -webkit-box;
+  overflow: hidden;
+  max-width: 210px;
+  font-size: 14px;
+  text-overflow: ellipsis; /*скрываем текст многоточием*/
+  line-height: 150%; /* 21px */
+  color: var(--medium-text-color);
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.article:focus .article__link,
+.article:focus .article__content {
+  outline: 1px solid var(--hover-color);
+  border-style: none;
+  background-color: var(--hover-color);
+}
+
+.article:focus .article__date,
+.article:focus .article__title,
+.article:focus .article__text {
+  color: var(--light-text-color);
+}
+
+@media (hover: hover) {
+  .article:hover:not(:focus) .article__content {
+    border-color: var(--focus-color);
+    background-color: var(--focus-color);
+  }
+}
+
+.article:hover:not(:focus) .article__date,
+.article:hover:not(:focus) .article__title,
+.article:hover:not(:focus) .article__text {
+  color: var(--light-text-color);
+}
+
+.article:active .article__link,
+.article:active .article__content {
+  border-color: var(--active-color);
+  background-color: var(--active-color);
+}
+
+.article:active .article__date,
+.article:active .article__title,
+.article:active .article__text {
+  color: var(--light-text-color);
+}
