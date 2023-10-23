@@ -4,7 +4,7 @@
   border-radius: 5px;
   /*--offset: 30px;*/
   /*--offsets: 1;*/
-  transition: all 0.4s;
+  transition: color 0.3s, background-color 0.5s;
 }
 
 .article__link {
@@ -30,7 +30,7 @@
   border-bottom-right-radius: 5px;
   border-color: var(--border-color);
   flex-direction: column;
-  transition: all 0.4s;
+  transition: color 0.3s, background-color 0.5s;
   row-gap: 15px;
 }
 

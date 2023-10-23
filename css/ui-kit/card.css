@@ -6,7 +6,7 @@
   border-radius: 5px;
   flex-direction: column;
   align-items: center;
-  transition: all 0.4s;
+  transition: color 0.3s, background-color 0.5s;
   /*--offset: 30px;*/
   /*--offsets: 2;*/
   row-gap: 15px;
