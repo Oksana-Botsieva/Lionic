@@ -1,3 +1,4 @@
+
 .card {
   display: flex;
   width: calc((100% - (var(--offsets)) * (var(--offset)) / (var(--offsets) + 1)));
@@ -7,8 +8,6 @@
   flex-direction: column;
   align-items: center;
   transition: all 0.4s;
-  /*--offset: 30px;*/
-  /*--offsets: 2;*/
   row-gap: 15px;
 }
 
@@ -20,8 +19,10 @@
 }
 
 .card__title {
+  display: block;
   font-size: 20px;
   font-weight: 600;
+  text-align: center;
   line-height: 130%;
   color: var(--dark-text-color);
 }
