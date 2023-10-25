@@ -26,5 +26,32 @@
 
 @media (max-width: 992px) {
   .services__cards {
+    --offsets: 1;
+  }
+
+  .services__container {
+    padding: 60px 0 140px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .services__cards {
+    --offset: 16px;
+  }
+
+  .services__title {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+  .services__text {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 320px) {
+  .services__cards {
+    --offset: 16px;
   }
 }
