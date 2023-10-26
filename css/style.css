@@ -13,10 +13,11 @@
 
 @import "./components/header.css";
 @import "./components/hero.css";
+@import "./components/services.css";
 
 .container {
   width: 100%;
-  max-width: 1540px;
+  max-width: 1200px;
   height: 100%;
   padding-right: 15px;
   padding-left: 15px;
