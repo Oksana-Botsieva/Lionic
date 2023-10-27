@@ -51,12 +51,12 @@
 /* } */
 .hero__button-wrapper {
   display: flex;
-  width: fit-content;
   flex-direction: column;
-  align-items: center;
+  row-gap: 14px;
+  width: fit-content;
   /* width: fit-content - определяем ширину обёртки исходя из ширины его содержимого, */
   /* таким образом блок не будет на всю ширину страницы растягиваться */
-  row-gap: 14px;
+  align-items: center;
 }
 
 .hero__button {
@@ -64,37 +64,34 @@
 }
 
 .hero__ssl {
-  position: relative;
   padding-left: 27px;
+  position: relative;
 }
 
 .hero__ssl:before {
-  position: absolute;
-  top: 50%;
+  --icon-width: 14px;
+  --icon-height: 17px;
   /* переменные добавлены просто чтобы был первоисточник размеров иконки */
-  left: 0;
   display: block;
   width: var(--icon-width);
   height: var(--icon-height);
   background: url("../../assets/images/secure.svg") center no-repeat;
+  background-size: var(--icon-width) var(--icon-height);
   /* если не указывать размер фона - тоже будет работать потому что у тебя иконка уже подготовлена */
   /* но если кто-то туда засунет иконку большего размера, то её обрежет */
   /* а с указанием размера - изменит пропорции изображения иконки */
   /* тоже всё поплывёт, но мне нравится когда размер фона указан */
-  background-size: var(--icon-width) var(--icon-height);
+  content: '';
   /* ниже - выравнивание иконки относительно текста */
   /* это один из приёмов вертикального выравнивания, часто приходится его использовать */
   /* обрати внимание, hero__ssl position: relative, */
   /* то есть все элементы внутри hero__ssl, которые спозиционированы абсолютно, будут отсчитывать свои координаты от координат hero__ssl */
   /* можно сказать, что мы задали контекст для координат hero__ssl:before */
   /* и теперь у них одна система координат на двоих, причём главный в этой системе hero__ssl потому что у него position: relative; */
-  content: '';
-  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
   /* top: 50%, буквально - "hero__ssl:before",  твой верх начинается на 50% высоты элемента в системе координат которого ты существуешь */
-  --icon-width: 14px;
-  --icon-height: 17px;
+  left: 0;
+  transform: translateY(-50%);
   /*  буквально - "hero__ssl:before", трансформируйся, а именно, переместись на 50% своей высоты выше  */
-}
-
-@media (max-width: 576px) {
 }
