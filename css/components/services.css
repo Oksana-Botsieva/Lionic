@@ -18,7 +18,6 @@
 .services__cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   gap: var(--offset);
   --offset: 30px;
   --offsets: 3;
