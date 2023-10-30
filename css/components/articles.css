@@ -1,0 +1,26 @@
+.articles {
+  border-bottom: 1px solid var(--disabled-color);
+}
+
+.articles__title {
+  font-size: 36px;
+  color: var(--dark-text-color);
+}
+
+.articles__container {
+  display: flex;
+  padding: 87px 0 160px 0;
+  flex-direction: column;
+  row-gap: 42px;
+}
+
+.articles__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--offset);
+  --offset: 30px;
+  --offsets: 1;
+}
+
+@media (max-width: 992px) {
+}
