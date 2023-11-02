@@ -1,3 +1,7 @@
+.services {
+  border-bottom: 1px solid var(--disabled-color);
+}
+
 .services__container {
   padding: 87px 0 160px 0;
 }
