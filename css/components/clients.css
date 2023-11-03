@@ -36,6 +36,7 @@
 .clients__author {
   display: flex;
   padding: 28px 0 0 6px;
+  align-items: center;
   gap: 17px;
 }
 
@@ -53,6 +54,10 @@
   border-radius: 50%;
 }
 
+.clients__author-avatar {
+  max-height: 67px;
+}
+
 .clients__name {
   font-size: 17px;
   font-weight: 600;
@@ -61,6 +66,7 @@
 }
 
 .clients__customer {
+  margin-top: -8px;
   font-size: 14px;
   line-height: 180%; /* 25.2px */
 }
@@ -71,7 +77,7 @@
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 768px) {
   .clients__container {
     padding: 60px 0 60px 0;
   }
