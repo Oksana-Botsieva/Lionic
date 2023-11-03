@@ -1,0 +1,35 @@
+.articles {
+  border-bottom: 1px solid var(--disabled-color);
+}
+
+.articles__title {
+  font-size: 36px;
+  color: var(--dark-text-color);
+}
+
+.articles__container {
+  display: flex;
+  padding: 87px 0 160px 0;
+  flex-direction: column;
+  row-gap: 42px;
+}
+
+.articles__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--offset);
+  --offset: 30px;
+  --offsets: 1;
+}
+
+@media (max-width: 440px) {
+  .articles__container {
+    padding: 60px 15px 60px 15px;
+    row-gap: 15px;
+  }
+
+  .articles__list {
+    --offset: 15px;
+    --offsets: 0;
+  }
+}

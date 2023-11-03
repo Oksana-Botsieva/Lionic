@@ -15,6 +15,7 @@
 @import "./components/hero.css";
 @import "./components/services.css";
 @import "./components/clients.css";
+@import "./components/articles.css";
 
 .container {
   width: 100%;
