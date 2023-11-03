@@ -39,13 +39,18 @@
   gap: 17px;
 }
 
+.clients__author-avatar {
+  display: flex;
+  height: 67px;
+  width: 67px;
+  justify-content: center;
+  align-items: center;
+}
+
 .clients__author-avatar img {
   overflow: hidden;
-  max-width: 67px;
-  max-height: 67px;
   border: 2px solid var(--services-icon-color);
   border-radius: 50%;
-  object-fit: cover;
 }
 
 .clients__name {
