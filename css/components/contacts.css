@@ -1,0 +1,35 @@
+.contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+  --offsets: 2;
+  --offset: 30px;
+}
+
+.contacts__item {
+  display: flex;
+  width: calc((100% - (var(--offsets) * var(--offset))) / (var(--offsets) + 1));
+  flex-direction: column;
+}
+
+.navigation__icon {
+  width: 29px;
+  height: 29px;
+}
+
+.navigation__title {
+  margin-top: 19px;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 180%;
+  color: var(--dark-text-color);
+}
+
+.contacts__item-phone {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__item-email {
+  display: flex;
+  flex-direction: column;
+}
