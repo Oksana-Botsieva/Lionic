@@ -1,0 +1,16 @@
+.join-us__container {
+  padding: 87px 0 160px 0;
+  border-bottom: 1px solid var(--disabled-color);
+}
+
+.join-us__title {
+  margin-bottom: 22px;
+  text-align: center;
+  color: var(--dark-text-color);
+}
+
+.join-us__subtitle {
+  font-size: 16px;
+  text-align: center;
+  line-height: normal;
+}
