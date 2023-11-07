@@ -14,3 +14,10 @@
   text-align: center;
   line-height: normal;
 }
+
+.join-us-form__item {
+  opacity: 0.6;
+  width: 251px;
+  border: 1px solid var(--border-form-color);
+  border-radius: 50px;
+}
