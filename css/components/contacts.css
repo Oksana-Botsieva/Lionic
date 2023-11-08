@@ -1,6 +1,9 @@
+.contacts {
+  border-bottom: 1px solid var(--disabled-color);
+}
+
 .contacts__container {
   padding: 87px 0 160px 0;
-  border-bottom: 1px solid var(--disabled-color);
 }
 
 .contacts__title {
