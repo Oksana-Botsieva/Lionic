@@ -26,10 +26,9 @@
   flex-direction: column;
 }
 
-.contacts__navigation-icon path {
+.contacts__navigation-icon {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .contacts__navigation-title {
