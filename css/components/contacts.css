@@ -25,9 +25,10 @@
   flex-direction: column;
 }
 
-.contacts__navigation-icon {
-  width: 29px;
-  height: 29px;
+.contacts__navigation-icon path {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contacts__navigation-title {
