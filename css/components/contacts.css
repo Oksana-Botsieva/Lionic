@@ -69,3 +69,18 @@
     margin-top: 10px;
   }
 }
+
+.contacts__navigation-style:focus {
+  outline: 1px solid var(--hover-color);
+  line-height: normal;
+}
+
+@media (hover: hover) {
+  .contacts__navigation-style:hover:not(:focus) {
+    color: var(--hover-color);
+  }
+}
+
+.contacts__navigation-style:active {
+  color: var(--active-color);
+}
