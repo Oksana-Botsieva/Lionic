@@ -25,12 +25,12 @@
   flex-direction: column;
 }
 
-.navigation__icon {
+.contacts__navigation-icon {
   width: 29px;
   height: 29px;
 }
 
-.navigation__title {
+.contacts__navigation-title {
   margin-top: 19px;
   font-size: 17px;
   font-weight: 600;
