@@ -29,6 +29,9 @@
 .contacts__navigation-icon {
   display: flex;
   align-items: center;
+  width: 29px;
+  height: 29px;
+  justify-content: center;
 }
 
 .contacts__navigation-title {
