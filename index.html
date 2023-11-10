@@ -277,28 +277,44 @@
       <h2 class="join-us__title">Join us</h2>
       <p class="join-us__subtitle">Take control of&nbsp;your paid
         subscriptions today!</p>
-      <form action="#" class="join-us-form" method="post">
-        <div class="join-us-form__left-wrapper">
-          <div class="join-us-form__list">
-            <input class="join-us-form__item" name="name" placeholder="Name"
-                   type="text">
-            <input class="join-us-form__item" name="email" placeholder="Email"
-                   type="email">
-            <input class="join-us-form__item" name="phone" placeholder="Phone"
-                   type="tel">
-            <select class="join-us-form__item" name="country">
-              <option value="United Kingdom">United Kingdom</option>
-              <option value="United States">United States</option>
-              <option value="France">France</option>
-              <option value="Germany">Germany</option>
-              <option value="Spain">Spain</option>
-              <option value="Estonia">Estonia</option>
-            </select>
+      <form action="#" class="join-us__form join-us-form" method="post">
+        <div class="join-us-form__top-wrapper">
+          <div class="join-us-form__left-wrapper">
+            <div class="join-us-form__list">
+              <input class="join-us-form__item" name="name" placeholder="Name"
+                     type="text">
+              <input class="join-us-form__item" name="email" placeholder="Email"
+                     type="email">
+              <input class="join-us-form__item" name="phone" placeholder="Phone"
+                     type="tel">
+              <select class="join-us-form__item" name="country">
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="Spain">Spain</option>
+                <option value="Estonia">Estonia</option>
+              </select>
+            </div>
+          </div>
+          <div class="join-us-form__right-wrapper">
+          <textarea class="join-us-form__item join-us-form__item-comment"
+                    name="story"
+                    placeholder="Comment"></textarea>
           </div>
         </div>
-        <textarea class="join-us-form__item-comment" name="story"
-                  placeholder="Comment"></textarea>
-
+        <div class="join-us-form__bottom-wrapper">
+          <div class="join-us-form__button-wrapper">
+            <a class="join-us__button button">GET STARTED</a>
+            <input class="join-us-form__checkbox" id="start" name="start"
+                   type="checkbox"
+                   value="yes">
+            <label for="start">I agree with the
+              <a href="#">user
+                agreement</a>
+            </label>
+          </div>
+        </div>
       </form>
     </div>
   </section>
