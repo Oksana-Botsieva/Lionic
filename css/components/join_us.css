@@ -26,6 +26,7 @@
 
 .join-us-form__top-wrapper {
   display: flex;
+  justify-content: space-between;
   column-gap: 19px;
 }
 
@@ -56,6 +57,7 @@
 .join-us-form__item-comment {
   resize: none;
   width: 520px;
+  /*width: 100%;*/
   height: 139px;
   padding: 15px 28px;
   border: 1px solid var(--border-form-color);
@@ -142,17 +144,14 @@ label a {
     flex-direction: column;
     --offsets: 0;
   }
-
-  .join-us-form__item {
-  }
-
+  
   .join-us-form__item-comment {
-    width: 100%;
+    /*width: 100%;*/
     height: 100%;
   }
 
   .join-us-form__right-wrapper {
-    width: auto;
+    /*width: auto;*/
   }
 
   .join-us-form__left-wrapper {
