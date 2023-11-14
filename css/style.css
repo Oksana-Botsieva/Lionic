@@ -16,19 +16,20 @@
 @import "./components/services.css";
 @import "./components/clients.css";
 @import "./components/articles.css";
+@import "./components/contacts.css";
 @import "./components/join_us.css";
 
 .container {
-  width: 100%;
-  max-width: 1200px;
-  height: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
 }
 
 .visually-hidden {
-  position: absolute;
-  z-index: -10001;
-  transform: scale(0);
+    position: absolute;
+    z-index: -10001;
+    transform: scale(0);
 }
