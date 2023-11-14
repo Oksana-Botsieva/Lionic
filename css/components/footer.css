@@ -35,7 +35,10 @@
   font-size: 15px;
 }
 
-.footer__navigation-item:focus {
+.footer__navigation-item:focus,
+.footer__social-icon-twitter:focus,
+.footer__social-icon-linkedIn:focus,
+.footer__social-icon-mail:focus {
   outline: 1px solid var(--hover-color);
   outline-offset: 3px;
 }
@@ -44,15 +47,18 @@
   .footer__navigation-item:hover:not(:focus) {
     color: var(--hover-color);
   }
+
+  .footer__social-icon-twitter:hover:not(:focus) svg path,
+  .footer__social-icon-linkedIn:hover:not(:focus) svg path {
+    fill: var(--hover-color);
+  }
+
+  .footer__social-icon-mail:hover:not(:focus) svg path {
+    stroke: var(--hover-color);
+  }
 }
 
 .footer__navigation-item:active {
   border-bottom: 2px solid var(--active-color);
   color: var(--active-color);
-}
-
-.footer__social-icon-twitter:focus,
-.footer__social-icon-linkedIn:focus,
-.footer__social-icon-mail:focus {
-  outline: 1px solid var(--hover-color);
 }
