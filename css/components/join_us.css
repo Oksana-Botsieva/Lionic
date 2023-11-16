@@ -133,7 +133,7 @@
   display: inline-block;
   width: 14px;
   height: 14px;
-  border: 1px solid #CACACA;
+  border: 1px solid #cacaca;
   margin-right: 8px;
   flex-grow: 0;
   flex-shrink: 0;
@@ -160,7 +160,7 @@ label a {
 @media (hover: hover) {
   .join-us-form__item:hover:not(:focus) {
     border: 1px solid var(--hover-color);
-    background-color: #FFF;
+    background-color: #fff;
   }
 }
 
