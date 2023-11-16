@@ -16,34 +16,6 @@
   line-height: normal;
 }
 
-.join-us-form {
-  display: flex;
-  max-width: calc(520px + 19px + 251px + 19px + 251px);
-  margin: 0 auto;
-  flex-direction: column;
-  row-gap: 19px;
-}
-
-.join-us-form__top-wrapper {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 19px;
-}
-
-.join-us-form__left-wrapper,
-.join-us-form__right-wrapper {
-  display: flex;
-  width: 50%;
-}
-
-.join-us-form__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 19px;
-  --offset: 19px;
-  --offsets: 1;
-}
-
 .join-us-form__select {
   width: 100%;
   outline: none;
