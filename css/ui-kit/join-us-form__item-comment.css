@@ -6,6 +6,7 @@
   border: 1px solid var(--border-form-color);
   border-radius: 20px;
   line-height: 180%; /* 28.8px */
+  color: var(--dark-text-color);
 }
 
 @media (max-width: 1200px) {

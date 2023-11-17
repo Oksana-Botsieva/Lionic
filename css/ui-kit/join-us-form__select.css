@@ -3,26 +3,9 @@
   outline: none;
   border: none;
   cursor: pointer;
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
 }
 
-.select__wrapper {
-  position: relative;
+option:disabled {
+  color: var(--dark-text-color);
 }
 
-.select__wrapper::before {
-  position: absolute;
-  top: 50%;
-  right: 28px;
-  display: block;
-  width: 0;
-  height: 0;
-  border-width: 0 6px 7px 6px;
-  border-style: solid;
-  border-color: transparent transparent #1c1c1c transparent;
-  content: "";
-  transform: translateY(-50%);
-  pointer-events: none;
-}
