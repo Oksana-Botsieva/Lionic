@@ -25,6 +25,3 @@
   border: 1px solid var(--active-color);
   color: var(--dark-text-color);
 }
-
-@media (max-width: 576px) {
-}
