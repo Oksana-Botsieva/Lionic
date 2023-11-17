@@ -1,0 +1,27 @@
+.join-us-form__item {
+  opacity: 0.6;
+  width: calc((100% - (var(--offsets) * var(--offset))) / (var(--offsets) + 1));
+  padding: 15px 28px;
+  border: 1px solid var(--border-form-color);
+  border-radius: 50px;
+  line-height: 180%; /* 28.8px */
+  background-color: #fff;
+  color: var(--dark-text-color);
+}
+
+.join-us-form__item:focus {
+  outline: 1px solid var(--hover-color);
+  background-color: rgba(113, 167, 226, 0.20);
+}
+
+@media (hover: hover) {
+  .join-us-form__item:hover:not(:focus) {
+    border: 1px solid var(--hover-color);
+    background-color: #fff;
+  }
+}
+
+.join-us-form__item:active {
+  border: 1px solid var(--active-color);
+  color: var(--dark-text-color);
+}

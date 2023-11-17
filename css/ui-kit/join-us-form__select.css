@@ -1,0 +1,11 @@
+.join-us-form__select {
+  width: 100%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+option:disabled {
+  color: var(--dark-text-color);
+}
+
