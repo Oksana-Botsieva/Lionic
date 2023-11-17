@@ -1,0 +1,21 @@
+.join-us-form__item-comment {
+  resize: none;
+  width: 100%;
+  height: 139px;
+  padding: 15px 28px;
+  border: 1px solid var(--border-form-color);
+  border-radius: 20px;
+  line-height: 180%; /* 28.8px */
+}
+
+@media (max-width: 1200px) {
+  .join-us-form__item-comment {
+    height: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .join-us-form__item-comment {
+    height: 240px;
+  }
+}

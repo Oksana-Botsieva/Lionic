@@ -10,6 +10,8 @@
 @import "../css/ui-kit/text-link.css";
 @import "../css/ui-kit/card.css";
 @import "../css/ui-kit/article.css";
+@import "../css/ui-kit/join-us-form__item.css";
+@import "../css/ui-kit/join-us-form__item-comment.css";
 
 @import "./components/header.css";
 @import "./components/hero.css";
@@ -21,16 +23,16 @@
 @import "./components/join-us-form.css";
 
 .container {
-  width: 100%;
-  max-width: 1200px;
-  height: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
 }
 
 .visually-hidden {
-  position: absolute;
-  z-index: -10001;
-  transform: scale(0);
+    position: absolute;
+    z-index: -10001;
+    transform: scale(0);
 }
