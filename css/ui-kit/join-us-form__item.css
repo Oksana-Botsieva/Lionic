@@ -6,7 +6,7 @@
   border-radius: 50px;
   line-height: 180%; /* 28.8px */
   background-color: #fff;
-  color: var(--medium-text-color);
+  color: var(--dark-text-color);
 }
 
 .join-us-form__item:focus {
